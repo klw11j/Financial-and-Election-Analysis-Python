@@ -41,6 +41,15 @@ print(f"Total Months: {len(total_months)}")
 print(f"Total: ${sum(total_profit)}")
 print(f"Average Change: {round(sum(profit_change)/len(profit_change),2)}")
 print(f"Greatest Increase in Profits:{greatest_increase_month} (${greatest_increase_profits})")
-print(f"Greatest Decrease in Profits:{greatest_decrease_month} (${greatest_decrease_profits})")        
+print(f"Greatest Decrease in Profits:{greatest_decrease_month} (${greatest_decrease_profits})")  
+
+with open('financial_analysis.txt', 'w') as text:
+    text.write("Financial Analysis")
+    text.write("-----------------------------------")
+    text.write(f"Total Months: {len(total_months)}")
+    text.write(f"Total: ${sum(total_profit)}")
+    text.write(f"Average Change: {round(sum(profit_change)/len(profit_change),2)}")
+    text.write(f"Greatest Increase in Profits:{greatest_increase_month} (${greatest_increase_profits})")
+    text.write(f"Greatest Decrease in Profits:{greatest_decrease_month} (${greatest_decrease_profits})")      
 
         
