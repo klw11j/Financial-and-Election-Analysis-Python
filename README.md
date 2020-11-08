@@ -1,5 +1,5 @@
-# Financial Analysis and Election Analysis
-## python-challenge
+# Financial Analysis and Election Analysis using Python
+
 
 ## Background
 
